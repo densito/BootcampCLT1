@@ -7,7 +7,7 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+  
 builder.Services.AddDbContext<PostegresDbContext>(options =>
 options.UseNpgsql(
         builder.Configuration.GetConnectionString("ProductosDb")));
