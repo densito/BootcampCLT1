@@ -21,4 +21,4 @@ postgres:
   port: 5432
   database: hardwareCLT
   username: postgres
-  password: "a.123456"   # Para demo local. En equipos reales, no commitear.
+  password: "PLACEHOLDER" 

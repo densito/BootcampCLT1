@@ -16,6 +16,12 @@ options.UseNpgsql(
 builder.Services.AddMediatR(cfg =>
 cfg.RegisterServicesFromAssemblies(typeof(GetProductoByIdHandler).Assembly));
 
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 

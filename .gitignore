@@ -1,0 +1,33 @@
+# ===========================
+# Build outputs
+# ===========================
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# ===========================
+# IDE
+# ===========================
+.vs/
+.vscode/
+*.suo
+*.user
+
+# ===========================
+# SECRETS Y CREDENCIALES (IMPORTANTE)
+# ===========================
+# Archivos con credenciales reales
+*secrets.yaml
+*-secrets.yaml
+appsettings.Local.json
+.env
+.env.local
+
+# ===========================
+# Otros
+# ===========================
+.DS_Store
+*.log
+node_modules/

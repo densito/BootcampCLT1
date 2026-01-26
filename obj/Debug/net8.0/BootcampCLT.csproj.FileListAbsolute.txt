@@ -55,3 +55,4 @@ C:\Users\User\source\repos\BootcampCLT\bootcampclt\obj\Debug\net8.0\BootcampCLT.
 C:\Users\User\source\repos\BootcampCLT\bootcampclt\obj\Debug\net8.0\ref\BootcampCLT.dll
 C:\Users\User\source\repos\BootcampCLT\BootcampCLT\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\source\repos\BootcampCLT\BootcampCLT\obj\Debug\net8.0\BootcampCLT.sourcelink.json
+C:\Users\User\source\repos\BootcampCLT\BootcampCLT\bin\Debug\net8.0\appsettings.Local.json

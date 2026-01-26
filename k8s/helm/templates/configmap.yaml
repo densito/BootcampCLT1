@@ -2,6 +2,8 @@
 kind: ConfigMap
 metadata:
   name: bootcamp-api-env
+  label:
+    app: {{ .Release.Name  }}
 data:
   ASPNETCORE_ENVIRONMENT: "Development"
   ASPNETCORE_URLS: "http://+:8080"
