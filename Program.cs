@@ -2,12 +2,13 @@ using BootcampCLT.Application.Queries;
 using BootcampCLT.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-
+using BootcampCLT.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-  
+builder.Services.AddScoped(typeof(LoggingService<>));
+
 builder.Services.AddDbContext<PostegresDbContext>(options =>
 options.UseNpgsql(
         builder.Configuration.GetConnectionString("ProductosDb")));

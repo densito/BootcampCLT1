@@ -565,19 +565,6 @@
           "categoriaId": {
             "type": "integer",
             "format": "int32"
-          },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaActualizacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "cantidadStock": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

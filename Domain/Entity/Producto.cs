@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace BootcampCLT.Domain.Entity
+﻿namespace BootcampCLT.Domain.Entity
 {
     public class Producto
     {
@@ -11,8 +9,10 @@ namespace BootcampCLT.Domain.Entity
         public decimal Precio { get; set; }
         public bool Activo { get; set; }
         public int CategoriaId { get; set; }
-        public DateTime FechaCreacion  { get; set; }
+        public DateTime FechaCreacion { get; set; }
         public DateTime? FechaActualizacion { get; set; }
         public int CantidadStock { get; set; }
+
+        public Categoria? Categoria { get; set; }
     }
 }

@@ -1,6 +1,9 @@
-﻿namespace BootcampCLT.Application.Queries
+﻿using BootcampCLT.Api.Response;
+using MediatR;
+
+namespace BootcampCLT.Application.Queries
 {
-    public class GetProductoQuery
+    public class GetAllProductosQuery : IRequest<List<ProductoResponse>>
     {
     }
 }

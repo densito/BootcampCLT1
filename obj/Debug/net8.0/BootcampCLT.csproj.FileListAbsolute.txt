@@ -54,3 +54,4 @@ C:\Users\User\source\repos\BootcampCLT\bootcampclt\obj\Debug\net8.0\BootcampCLT.
 C:\Users\User\source\repos\BootcampCLT\bootcampclt\obj\Debug\net8.0\BootcampCLT.genruntimeconfig.cache
 C:\Users\User\source\repos\BootcampCLT\bootcampclt\obj\Debug\net8.0\ref\BootcampCLT.dll
 C:\Users\User\source\repos\BootcampCLT\BootcampCLT\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\User\source\repos\BootcampCLT\BootcampCLT\obj\Debug\net8.0\BootcampCLT.sourcelink.json

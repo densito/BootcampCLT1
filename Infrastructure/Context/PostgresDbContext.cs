@@ -11,10 +11,24 @@ namespace BootcampCLT.Infraestructure.Context
         }
 
         public DbSet<Producto> Productos => Set<Producto>();
+        public DbSet<Categoria> Categorias { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Categoria>(b =>
+           {
+               b.ToTable("categorias");
+               b.HasKey(c => c.Id);
+               b.Property(c => c.Id).HasColumnName("id");
+               b.Property(c => c.Nombre).HasColumnName("nombre").HasMaxLength(100).IsRequired();
+               b.Property(c => c.Descripcion).HasColumnName("descripcion").HasMaxLength(500);
+               b.Property(c => c.Activo).HasColumnName("activo").IsRequired();
+               b.Property(c => c.FechaCreacion).HasColumnName("fecha_creacion").IsRequired();
+               b.Property(c => c.FechaActualizacion).HasColumnName("fecha_actualizacion");
+           });
 
             modelBuilder.Entity<Producto>(b =>
             {
